@@ -1,0 +1,16 @@
+<div [formGroup]="currencyConversion">
+  <h2>Currency Conversion</h2>
+  <div class="row conversion">
+    <div class="col-3 amount">
+      <label>From (USD)</label> <br>
+      <input formControlName="fromAmount" placeholder="$0.00">
+    </div>
+    <div class="col-2 equal">
+      <p>=</p>
+    </div>
+    <div class="col-3 amount">
+      <label>To (BDT)</label> <br>
+      {{toAmount}}
+    </div>
+  </div>
+</div>
